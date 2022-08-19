@@ -1,8 +1,91 @@
 .container{
     display: flex;
     flex-direction: column;
-    row-gap: 5rem;
     justify-content: center;
     align-items: center;
-    padding:10rem 0;
+  height: 100%;
+    background-color:#356986;
+    margin: 0;
+ 
   }
+
+.container h1{
+ color:#AEE9F0;
+  font-size: 5rem;
+}
+.container .timerDisplay{
+  margin-bottom: 3rem;
+  color:#AEE9F0;
+  font-size: 5rem;
+}
+
+.container .title{
+  color: #C9A8A0;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+.container .buttonGroup{
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+.buttonStyle{
+  box-shadow: 10px 10px 5px #494848;
+ font-size: 2rem;
+ border:none;
+ border-radius: 10px;
+ color:#1e2121;
+ padding:2rem;
+ margin-bottom:3rem ;
+}
+.headerText{
+  color:rgb(233, 230, 230);
+    text-shadow: 2px 2px 5px #494848;
+    letter-spacing: 3px;
+    font-size: 5rem;
+    display: flex;
+    text-align: center;
+}
+/* for screen width smaller than 700 px */
+@media only screen and (max-width: 700px) {
+  .container h1{
+    
+ text-align: center;
+  }
+  .headerText{
+    
+      font-size: 2rem;
+    
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .headerText{
+    
+    font-size: 1rem;
+  
+}
+  .container .timerDisplay{
+    margin-bottom: 3rem;
+    color:#AEE9F0;
+    font-size: 3rem;
+  }
+  .container .title{
+    color: #C9A8A0;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+  .container .buttonGroup{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .buttonStyle{
+    box-shadow: 5px 5px 3px #494848;
+   font-size: 20px;
+  
+   padding:1rem;
+   margin-bottom:3rem ;
+  }
+}
